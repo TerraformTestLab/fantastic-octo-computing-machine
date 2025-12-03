@@ -1,0 +1,30 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Ignore override and CLI config files which may contain sensitive data
+override.tf
+override.tf.json
+override.tfvars
+override.tfvars.json
+*.tfvars
+!vcs.auto.tfvars
+
+# Terraform plan outputs
+*.tfplan
+plan.out
+
+# Local terraform plugin dir
+.terraform.d/
+
+# Optional: CLI config files (typically in user's home directory)
+.terraformrc
+terraform.rc
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+*.swp
