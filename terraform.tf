@@ -4,6 +4,9 @@ terraform {
     organization = "sujay-test-01"
     workspaces {
       project = "Tf-Migrate-Stack-Migration-Retry-Test"
+      tags = {
+        "terraform-migrate-stack-migration-retry-test" = "true"
+      }
     }
   }
 }

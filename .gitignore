@@ -11,6 +11,7 @@ override.tfvars
 override.tfvars.json
 *.tfvars
 !vcs.auto.tfvars
+!terraform.tfvars
 
 # Terraform plan outputs
 *.tfplan
