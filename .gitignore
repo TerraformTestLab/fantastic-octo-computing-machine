@@ -12,6 +12,9 @@ override.tfvars.json
 *.tfvars
 !vcs.auto.tfvars
 !terraform.tfvars
+_stacks_generated 
+stacks_migration_infra 
+stacks-config
 
 # Terraform plan outputs
 *.tfplan
