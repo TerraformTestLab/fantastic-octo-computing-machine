@@ -17,7 +17,7 @@ This repository contains Terraform configuration files for managing infrastructu
 - **Workspaces**:
   - [prod-workspace](https://app.terraform.io/app/sujay-test-01/workspaces/prod-workspace)
     - Type: `VCS-Driven`
-    - Variable file used: `vcs.auto.tfvars` 
+    - Variable file used: `vcs.auto.tfvars`
     - Branch: `main`
     - push to the branch and then create a new run in HCP Terraform UI to apply changes.
   
