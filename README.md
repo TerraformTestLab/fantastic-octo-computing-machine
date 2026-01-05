@@ -5,9 +5,9 @@ This repository contains Terraform configuration files for managing infrastructu
 
 ## Prerequisites
 
-- [Terraform](https://www.terraform.io/downloads.html) installed on your local machine version 1.13.5 or higher.
+- [Terraform](https://www.terraform.io/downloads.html) installed on your local machine version `1.13.5` or higher.
 - An account with [HashiCorp Cloud Platform (HCP)](https://cloud.hashicorp.com/).
-- An AWS account with necessary permissions to create and manage resources.
+- An AWS account with the necessary permissions to create and manage resources.
 - Doormat CLI installed and configured. Follow the [Doormat CLI installation instructions](https://docs.prod.secops.hashicorp.services/doormat/cli/)
 
 ## Workspace Details
@@ -17,14 +17,14 @@ This repository contains Terraform configuration files for managing infrastructu
 - **Workspaces**:
   - [prod-workspace](https://app.terraform.io/app/sujay-test-01/workspaces/prod-workspace)
     - Type: `VCS-Driven`
-    - Varible file used: `vcs.auto.tfvars` 
+    - Variable file used: `vcs.auto.tfvars` 
     - Branch: `main`
     - push to the branch and then create a new run in HCP Terraform UI to apply changes.
   
   - [dev-workspace](https://app.terraform.io/app/sujay-test-01/workspaces/dev-workspace)
     - Type: `ClI-Driven`
-    - Varible file used: `terraform.tfvars`
-    - To apply changes run the following command:
+    - Variable file used: `terraform.tfvars`
+    - To apply changes, run the following command:
 
       ```bash
       terraform apply -var-file="terraform.tfvars"
