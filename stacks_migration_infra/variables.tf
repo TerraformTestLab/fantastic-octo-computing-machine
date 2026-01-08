@@ -7,11 +7,11 @@ variable "tfe_hostname" {
 }
 
 variable "project_name" {
-  default = "new-stacks-project"
+  default = "Tf-Migrate-Stack-Migration-Retry-Test"
 }
 
 variable "stack_name" {
-  default = "new-stacks-v1"
+  default = "hello-stacks-v5"
 }
 
 variable "stacks_config_file_dir" {
