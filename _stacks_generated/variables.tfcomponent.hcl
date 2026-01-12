@@ -38,3 +38,4 @@ variable "session_token" {
   sensitive   = true
   ephemeral   = true
 }
+

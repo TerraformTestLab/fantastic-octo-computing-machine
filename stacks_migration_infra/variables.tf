@@ -7,11 +7,11 @@ variable "tfe_hostname" {
 }
 
 variable "project_name" {
-  default = "new-stacks-project"
+  default = "stack-with-source"
 }
 
 variable "stack_name" {
-  default = "new-stacks-v1"
+  default = "stack-with-migration-source-v1"
 }
 
 variable "stacks_config_file_dir" {

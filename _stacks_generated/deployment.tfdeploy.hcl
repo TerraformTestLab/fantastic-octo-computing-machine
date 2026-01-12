@@ -16,9 +16,9 @@ deployment "dev-workspace" {
     access_key    = store.varset.tokens.AWS_ACCESS_KEY_ID
     secret_key    = store.varset.tokens.AWS_SECRET_ACCESS_KEY
     session_token = store.varset.tokens.AWS_SESSION_TOKEN
+    instance_name = "stack-v3-test-dev-instance"
     instance_type = "t3.micro"
     ami_id        = "ami-0dee22c13ea7a9a67"
-    instance_name = "stack-v3-test-dev-instance"
   }
   import = true
 }
@@ -30,9 +30,9 @@ deployment "prod-workspace" {
     access_key    = store.varset.tokens.AWS_ACCESS_KEY_ID
     secret_key    = store.varset.tokens.AWS_SECRET_ACCESS_KEY
     session_token = store.varset.tokens.AWS_SESSION_TOKEN
+    ami_id        = "ami-0dee22c13ea7a9a67"
     instance_name = "stack-v3-test-prod-instance"
     instance_type = "t3.micro"
-    ami_id        = "ami-0dee22c13ea7a9a67"
   }
   import = true
 }
