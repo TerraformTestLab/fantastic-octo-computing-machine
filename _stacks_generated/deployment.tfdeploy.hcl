@@ -9,14 +9,14 @@
 # More on varset based authentication - https://developer.hashicorp.com/terraform/language/stacks/deploy/authenticate#authenticate-with-a-variable-set
 
 store "varset" "tokens" {
-  id       = "<varset-xvfRyT1qNahGfpWm"
+  id       = "varset-xvfRyT1qNahGfpWm"
   category = "env"
 }
 
-deployment "dev-workspace-deployment" {
+deployment "prod-workspace-deployment" {
   inputs = {
     ami_id        = "ami-0dee22c13ea7a9a67"
-    instance_name = "stack-v3-test-dev-instance"
+    instance_name = "stack-v3-test-prod-instance"
     instance_type = "t3.micro"
     access_key    = store.varset.tokens.AWS_ACCESS_KEY_ID
     secret_key    = store.varset.tokens.AWS_SECRET_ACCESS_KEY
@@ -27,11 +27,11 @@ deployment "dev-workspace-deployment" {
 
 
 
-deployment "prod-workspace-deployment" {
+deployment "dev-workspace-deployment" {
   inputs = {
-    instance_name = "stack-v3-test-prod-instance"
     instance_type = "t3.micro"
     ami_id        = "ami-0dee22c13ea7a9a67"
+    instance_name = "stack-v3-test-dev-instance"
     access_key    = store.varset.tokens.AWS_ACCESS_KEY_ID
     secret_key    = store.varset.tokens.AWS_SECRET_ACCESS_KEY
     session_token = store.varset.tokens.AWS_SESSION_TOKEN
