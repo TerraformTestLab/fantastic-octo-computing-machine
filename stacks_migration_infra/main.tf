@@ -35,3 +35,10 @@ resource "tfmigrate_stack_migration" "stack_migration" {
   terraform_config_dir         = var.terraform_config_dir
   workspace_deployment_mapping = var.workspace_deployment_mapping
 }
+
+
+import {
+  to = tfe_project.stack_project
+  id = "prj-mmzFCM8iP67WGadD"
+}
+

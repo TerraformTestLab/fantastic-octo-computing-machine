@@ -1,6 +1,7 @@
 organization_name  = "sujay-test-01"
 stack_project_name = "config-file-default-test-project"
-stack_name        = "config-file-default-test"
+stack_name        = "config-file-default-test-3"
+existing_project   = true
 workspace_config = { 
   "dev-workspace" = {
     deployment_name = "dev-workspace-deployment"

@@ -11,7 +11,7 @@ variable "project_name" {
 }
 
 variable "stack_name" {
-  default = "config-file-default-test"
+  default = "config-file-default-test-3"
 }
 
 variable "stacks_config_file_dir" {
@@ -24,7 +24,7 @@ variable "terraform_config_dir" {
 
 variable "workspace_deployment_mapping" {
   default = {
-    dev-workspace  = "dev-workspace-deployment"
-    prod-workspace = "prod-workspace-deployment"
+    dev-workspace  = "dev-workspace"
+    prod-workspace = "prod-workspace"
   }
 }

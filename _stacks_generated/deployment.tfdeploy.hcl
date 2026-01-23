@@ -13,7 +13,7 @@ store "varset" "tokens" {
   category = "env"
 }
 
-deployment "dev-workspace-deployment" {
+deployment "dev-workspace" {
   inputs = {
     instance_type = "t3.micro"
     ami_id        = "ami-0dee22c13ea7a9a67"
@@ -27,7 +27,7 @@ deployment "dev-workspace-deployment" {
 
 
 
-deployment "prod-workspace-deployment" {
+deployment "prod-workspace" {
   inputs = {
     instance_name = "stack-v3-test-prod-instance"
     instance_type = "t3.micro"
