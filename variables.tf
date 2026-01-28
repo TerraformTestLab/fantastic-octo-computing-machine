@@ -15,3 +15,16 @@ variable "ami_id" {
   type        = string
   default     = "ami-0dee22c13ea7a9a67" # Amazon Linux 2023 AMI in ap-south-1 (verify this if needed, but using a placeholder/common one is usually okay for templates)
 }
+
+variable "aws_subnet_id" {
+  description = "The VPC Subnet ID to launch the instance in"
+  type        = string
+  sensitive   = true
+  default     = "" # Leave empty for default VPC, or specify a subnet ID if needed
+}
+
+variable "region" {
+  description = "The AWS region to deploy resources in"
+  type        = string
+  default     = "" # Replace with your desired AWS region
+}
